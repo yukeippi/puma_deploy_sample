@@ -8,7 +8,8 @@ server "160.16.223.40", user: "rails", roles: %w{app db web}, my_property: :my_v
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-
+set :rbenv_type, :user # or :system, or :fullstaq (for Fullstaq Ruby), depends on your rbenv setup
+set :rbenv_ruby, '3.1.4'
 
 # role-based syntax
 # ==================
