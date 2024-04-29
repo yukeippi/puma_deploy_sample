@@ -11,6 +11,8 @@ server "160.16.223.40", user: "rails", roles: %w{app db web}, my_property: :my_v
 set :rbenv_type, :user # or :system, or :fullstaq (for Fullstaq Ruby), depends on your rbenv setup
 set :rbenv_ruby, '3.1.4'
 
+set :puma_service_unit_name, 'puma.service'
+
 # role-based syntax
 # ==================
 
